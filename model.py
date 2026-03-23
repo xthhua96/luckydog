@@ -7,8 +7,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import random
-# random.seed(2025)
-# np.random.seed(2025)
+random.seed(2025)
+np.random.seed(2025)
 # --------------------------
 # Configuration
 # --------------------------
