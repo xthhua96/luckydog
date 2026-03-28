@@ -2,25 +2,12 @@
 """
 Author: BigCat
 """
-import os
 import argparse
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from loguru import logger
-
-name_path = {
-    "ssq": {
-        "name": "双色球",
-        "path": "data/ssq/"
-    },
-    "dlt": {
-        "name": "大乐透",
-        "path": "data/dlt/"
-    }
-}
-
-data_file_name = "data.csv"
+from config import os, name_path, data_file_name
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--name', default="ssq", type=str, help="选择爬取数据: 双色球/大乐透")
